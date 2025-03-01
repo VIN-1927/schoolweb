@@ -31,7 +31,7 @@ const Navbar = () => {
                 NEWS
                 </NavLink>
                 <NavLink to="/videos" className={linkClass}>
-                VIDEOS
+                IMAGE Gallery
                 </NavLink>
                 <NavLink to="/family" className={linkClass}>
                 MYFAMILY
