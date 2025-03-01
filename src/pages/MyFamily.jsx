@@ -3,7 +3,7 @@ import Lion from '../assets/images/lion.jpeg';
 
 const MyFamily = () => {
   return (
-    <div className="grid grid-cols-3 grid-rows-4 gap-2 p-4 md:gap-4 md:p-6 lg:gap-6 lg:p-8 mt-6 mb-6">
+    <div className="grid grid-cols-4 grid-rows-3 gap-2 p-4 md:gap-4 md:p-6 lg:gap-6 lg:p-8 mt-6 mb-6">
       <div className="flex flex-col items-center justify-center bg-blue-300 p-4 rounded-lg text-xl font-bold w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
         <img src={Lion} alt="Mum" className="w-32 h-32 rounded-full" />
         Mum
