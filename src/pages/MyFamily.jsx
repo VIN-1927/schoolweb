@@ -13,19 +13,19 @@ const MyFamily = () => {
         Dad
       </div>
       <div className="flex flex-col items-center justify-center bg-gray-200 p-4 rounded-lg w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
-        <img src={Lion} alt="Child 1" className="w-32 h-32 rounded-full" />
+        <img src={Lion} alt="lion1" className="w-32 h-32 rounded-full" />
         Child 1
       </div>
       <div className="flex flex-col items-center justify-center bg-gray-200 p-4 rounded-lg w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
-        <img src={Lion} alt="Child 2" className="w-32 h-32 rounded-full" />
+        <img src={Lion} alt="lion2" className="w-32 h-32 rounded-full" />
         Child 2
       </div>
       <div className="flex flex-col items-center justify-center bg-gray-200 p-4 rounded-lg w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
-        <img src={Lion} alt="Child 3" className="w-32 h-32 rounded-full" />
+        <img src={Lion} alt="lion 3" className="w-32 h-32 rounded-full" />
         Child 3
       </div>
       <div className="flex flex-col items-center justify-center bg-gray-200 p-4 rounded-lg w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
-        <img src={Lion} alt="Child 4" className="w-32 h-32 rounded-full" />
+        <img src={Lion} alt="lion" className="w-32 h-32 rounded-full" />
         Child 4
       </div>
       <div className="flex flex-col items-center justify-center bg-gray-200 p-4 rounded-lg w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
@@ -33,7 +33,7 @@ const MyFamily = () => {
         Grandparent
       </div>
       <div className="flex flex-col items-center justify-center bg-gray-200 p-4 rounded-lg w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
-        <img src={Lion} alt="Aunt" className="w-32 h-32 rounded-full" />
+        <img src={Lion} alt="lion5" className="w-32 h-32 rounded-full" />
         Aunt
       </div>
       <div className="flex flex-col items-center justify-center bg-gray-200 p-4 rounded-lg w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56">
