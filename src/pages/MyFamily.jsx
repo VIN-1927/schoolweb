@@ -60,7 +60,7 @@ const MyFamily = () => {
     ? familyMembers
     : familyMembers.slice(0, 3);
   return (
-    <div className="flex flex-col items-center mt-6 mb-16">
+    <div className="flex flex-col items-center mt-20 mb-16">
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 p-4">
         {displayedMembers.map((member, index) => (
           <div

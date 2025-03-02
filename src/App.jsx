@@ -13,7 +13,7 @@ import HomePage from './pages/HomePage';
 import MainLayout from './Layouts/MainLayout';
 import About from './pages/About.jsx';
 import School from './pages/School.jsx'
-import Videos from './pages/Videos.jsx'
+import ImageGallery from './pages/ImageGallery.jsx';
 import Myfamily from './pages/MyFamily.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="about" element={<About />} />
       <Route path="school" element={<School />} />
-      <Route path="videos" element={<Videos />} />
+      <Route path="image" element={<ImageGallery />} />
       <Route path="family" element={<Myfamily />} />
     </Route>
   )

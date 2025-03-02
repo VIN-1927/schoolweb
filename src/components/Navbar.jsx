@@ -27,10 +27,8 @@ const Navbar = () => {
                 <NavLink to="/about" className={linkClass}>
                   About
                 </NavLink>
-                <NavLink to="/school" className={linkClass}>
-                NEWS
-                </NavLink>
-                <NavLink to="/videos" className={linkClass}>
+                
+                <NavLink to="/image" className={linkClass}>
                 IMAGE Gallery
                 </NavLink>
                 <NavLink to="/family" className={linkClass}>
