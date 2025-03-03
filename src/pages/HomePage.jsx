@@ -1,6 +1,6 @@
 import React from "react";
-import Dinaal from "../assets/images/Dimage.png"; // Ensure the correct image path
-import "../App.css"; // Import the CSS file for the flip effect
+import Dinaal from "../assets/images/Dimage.png";  
+import "../App.css"; 
 
 const HomePage = () => {
   return (
@@ -35,7 +35,7 @@ const HomePage = () => {
 
             {/* Back Side */}
             <div className="flip-card-back">
-              <h3 className="text-2xl font-bold text-gray-800 bg-[#abf7b1]">Author of the picture book Springtime Andrew</h3>
+              <h3 className="text-2xl font-bold text-gray-800 bg-[#abf7b1]">Author of the picture book <span>"Springtime Andrew"</span></h3>
            
             </div>
           </div>

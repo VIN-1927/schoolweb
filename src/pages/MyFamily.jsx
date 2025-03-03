@@ -17,65 +17,40 @@ const MyFamily = () => {
   const [showAllPhotos, setShowAllPhotos] = useState(false);
 
   const familyMembers = [
-    { name: "Mum", image: MumImg, style: { backgroundColor: "#05dbf2" } },
-
-    { name: "Dad", image: DadImg, style: { backgroundColor: "#cbfb07" } },
-    {
-      name: "Brother",
-      image: BrotherImg,
-      style: { backgroundColor: "#fdfe03" },
-    },
-    { name: "Sister", image: SisterImg, style: { backgroundColor: "#aaf0d1" } },
-    {
-      name: "GrandMother",
-      image: GrandMotherImg,
-      style: { backgroundColor: "#e326ab" },
-    },
-    {
-      name: "GrandFather",
-      image: GrandFatherImg,
-      style: { backgroundColor: "#fbf8fb" },
-    },
-    {
-      name: "GrandMum",
-      image: GrandMumImg,
-      style: { backgroundColor: "#00fecc" },
-    },
-    {
-      name: "GrandDad",
-      image: GrandDadImg,
-      style: { backgroundColor: "#00adf9" },
-    },
-
-    { name: "Aunty", image: AuntyImg, style: { backgroundColor: "#f7e90e" } },
-    { name: "Uncle", image: UncleImg, style: { backgroundColor: "#00adf9" } },
-    {
-      name: "Cousin",
-      image: CousungImg,
-      style: { backgroundColor: "#8400ff" },
-    },
-    { name: "Cat", image: Pet1Img, style: { backgroundColor: "#ec0d88" } },
-    { name: "Dog", image: Pet2Img, style: { backgroundColor: "#fda7a7" } },
+    { name: "Mum", image: MumImg, bg: "#05dbf2" },
+    { name: "Dad", image: DadImg, bg: "#cbfb07" },
+    { name: "Brother", image: BrotherImg, bg: "#fdfe03" },
+    { name: "Sister", image: SisterImg, bg: "#aaf0d1" },
+    { name: "GrandMother", image: GrandMotherImg, bg: "#e326ab" },
+    { name: "GrandFather", image: GrandFatherImg, bg: "#fbf8fb" },
+    { name: "GrandMum", image: GrandMumImg, bg: "#00fecc" },
+    { name: "GrandDad", image: GrandDadImg, bg: "#00adf9" },
+    { name: "Aunty", image: AuntyImg, bg: "#f7e90e" },
+    { name: "Uncle", image: UncleImg, bg: "#00adf9" },
+    { name: "Cousin", image: CousungImg, bg: "#8400ff" },
+    { name: "Cat", image: Pet1Img, bg: "#ec0d88" },
+    { name: "Dog", image: Pet2Img, bg: "#fda7a7" },
   ];
-  const displayedMembers = showAllPhotos
-    ? familyMembers
-    : familyMembers.slice(0, 3);
+
+  const displayedMembers = showAllPhotos ? familyMembers : familyMembers.slice(0, 3);
+
   return (
-    <div className="flex flex-col items-center mt-20 mb-16">
+    <div className="flex flex-col items-center min-h-[70vh] max-h-[80vh] overflow-y-auto mt-20 mb-16">
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 p-4">
         {displayedMembers.map((member, index) => (
-          <div
-            key={index}
-            style={member.style}
-            className={`flex flex-col items-center justify-center ${member.backgroundColor}rounded-lg text-xl font-bold w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56`}
-          >
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-32 h-32 rounded-full"
-            />
-
-            {member.name}
+          <div key={index} className="flip-card" style={{ width: "140px", height: "140px" }}>
+            <div className="flip-card-inner">
+              <div
+                className="flip-card-front flex flex-col items-center justify-center rounded-lg text-xl font-bold w-full h-full"
+                style={{ backgroundColor: member.bg }}
+              >
+                <img src={member.image} alt={member.name} className="w-24 h-24 rounded-full" />
+              </div>
+              <div className="flip-card-back flex flex-col items-center justify-center text-white">
+                <p className="text-lg font-bold">{member.name}</p>
+            
+              </div>
+            </div>
           </div>
         ))}
       </div>
