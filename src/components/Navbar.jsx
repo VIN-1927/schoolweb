@@ -29,10 +29,10 @@ const Navbar = () => {
                 </NavLink>
                 
                 <NavLink to="/image" className={linkClass}>
-                IMAGE Gallery
+                Image Gallery
                 </NavLink>
                 <NavLink to="/family" className={linkClass}>
-                MYFAMILY
+                MyFamily
                 </NavLink>
               </div>
             </div>
