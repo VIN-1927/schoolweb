@@ -18,6 +18,7 @@ const MyFamily = () => {
 
   const familyMembers = [
     { name: "Mum", image: MumImg, style: { backgroundColor: "#05dbf2" } },
+
     { name: "Dad", image: DadImg, style: { backgroundColor: "#cbfb07" } },
     {
       name: "Brother",
