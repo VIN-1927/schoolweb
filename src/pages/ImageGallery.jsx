@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Spring from "../assets/images/Andrew.png";
 
+
 const ImageGallery = () => {
   const [artWorks, setArtWorks] = useState(false);
 
@@ -36,6 +37,7 @@ const ImageGallery = () => {
       >
         {artWorks ? "less" : "more"}
       </button>
+     
     </div>
   );
 };

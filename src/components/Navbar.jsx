@@ -34,6 +34,9 @@ const Navbar = () => {
                 <NavLink to="/family" className={linkClass}>
                 MyFamily
                 </NavLink>
+                <NavLink to="/spiralmonkey" className={linkClass}>
+               Monkey
+                </NavLink>
               </div>
             </div>
           </div>

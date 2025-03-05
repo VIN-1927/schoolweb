@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+ 
 const About = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen p-6 text-white">
@@ -19,8 +19,9 @@ const About = () => {
             View My Family
           </Link>
         </div>
-      </div>
+      </div> 
     </section>
+    
   );
 };
 
