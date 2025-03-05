@@ -35,7 +35,7 @@ const HomePage = () => {
 
             {/* Back Side */}
             <div className="flip-card-back">
-              <h3 className="text-2xl font-bold text-gray-800 bg-[#abf7b1]">Author of the picture book <span>"Springtime Andrew"</span></h3>
+              <h3 className="text-2xl font-bold text-gray-800 bg-[#abf7b1]">Author of the picture book <span>"Springtime Andrews"</span></h3>
            
             </div>
           </div>
