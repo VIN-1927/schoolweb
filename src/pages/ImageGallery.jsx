@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import Spring from "../assets/images/Andrew.png";
-
+import Spring from "../assets/images/Dinaal in Thailand.png";
+import Singapore from '../assets/images/Dinaal in Singapore.png'
+import  Dubai from '../assets/images/Dinaal in UAE.png'
 
 const ImageGallery = () => {
   const [artWorks, setArtWorks] = useState(false);
 
   const myDevelopments = [
-    { name: "threeY", draw: Spring, style: { backgroundColor: "#05dbf2" } },
-    { name: "fourY", draw: Spring, style: { backgroundColor: "#cbfb07" } },
-    { name: "fiveY", draw: Spring, style: { backgroundColor: "#fdfe03" } },
+    { name: "Phuket", draw: Spring, style: { backgroundColor: "#05dbf2" } },
+     { name: "Singapore", draw: Singapore, style: { backgroundColor: "#cbfb07" } },
+     { name: "Dubai", draw: Dubai, style: { backgroundColor: "#fdfe03" } },
   ];
 
   const displyedArtWork = artWorks ? myDevelopments : myDevelopments.slice(0, 2);
