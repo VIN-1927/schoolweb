@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
- 
+import Page from '../components/Page';
+
 const About = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen p-6 text-white">
+    <Page title="About ME" className="flex flex-col items-center justify-center min-h-screen p-6 text-white">
       <h1 className="text-4xl font-bold mb-4">DE SILVA</h1>
       <div className="bg-[#ffea6f] p-6 rounded-lg shadow-lg max-w-lg text-left text-black">
         <h3 className="text-lg leading-relaxed">
@@ -20,12 +21,12 @@ const About = () => {
           </Link>
         </div>
       </div> 
-    </section>
-    
+    </Page>
   );
 };
 
 export default About;
+
 
 
 

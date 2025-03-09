@@ -1,5 +1,5 @@
 import React from 'react';
-
+ 
 const Footer = () => {
   const handleClick = () => {
     window.open("https://www.youtube.com/@DinaalSAVAGE4321")

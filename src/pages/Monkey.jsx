@@ -1,12 +1,17 @@
-import React from 'react'
-// import SpiralMonkey from '../components/SpiralMonkey'
-import SpiralMotion from "../components/SpiralMtion";
+import React from 'react';
+import Page from '../components/Page';
+import SpiralMotion from "../components/SpiralMotion"; 
+
 const Monkey = () => {
   return (
-    // <div><SpiralMonkey />
-     <div><SpiralMotion/></div>
-    //   </div>
-  )
-}
+    <Page title="Fun">
+      <div className="spiralMotion">
+        <h1>HHHHHHHH</h1>
+        <SpiralMotion />
+      </div>
+    </Page>
+  );
+};
 
-export default Monkey
+export default Monkey;
+

@@ -1,10 +1,10 @@
 import React from "react";
 import Dinaal from "../assets/images/Dimage.png";  
 import "../App.css"; 
-
+import Page from '../components/Page'
 const HomePage = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-[#ffea6f]">
+    <Page title="My Home" className="flex flex-col justify-center items-center h-screen bg-[#ffea6f]">
       {/* Text above the white box */}
       <div className="text-2xl font-bold text-gray-800 mb-4">
         "Harmonizing Knowledge and Creativity for a Brighter Future"
@@ -42,7 +42,7 @@ const HomePage = () => {
         </div>
 
       </div>
-    </div>
+    </Page>
   );
 };
 

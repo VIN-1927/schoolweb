@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/images/Andrew.png';
 import { NavLink } from 'react-router-dom';
+import NewsWithSmoke from '../pages/NewsWithSmoke'
 
 const Navbar = () => {
   const linkClass = ({ isActive }) =>
@@ -18,6 +19,7 @@ const Navbar = () => {
             <span className="hidden md:block text-white text-2xl font-bold ml-2">
               NEWS
             </span>
+         
           </NavLink>
             <div className="md:ml-auto">
               <div className="flex space-x-2">

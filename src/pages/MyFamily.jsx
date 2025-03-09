@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Page from '../components/Page'
 import MumImg from "../assets/images/lion.jpeg";
 import DadImg from "../assets/images/lion.jpeg";
 import BrotherImg from "../assets/images/lion.jpeg";
@@ -35,7 +36,7 @@ const MyFamily = () => {
   const displayedMembers = showAllPhotos ? familyMembers : familyMembers.slice(0, 3);
 
   return (
-    <div className="flex flex-col items-center min-h-[70vh] max-h-[80vh] overflow-y-auto mt-20 mb-16">
+    <Page title="MyFamily" className="flex flex-col items-center min-h-[70vh] max-h-[80vh] overflow-y-auto mt-20 mb-16">
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 p-4">
         {displayedMembers.map((member, index) => (
           <div key={index} className="flip-card" style={{ width: "140px", height: "140px" }}>
@@ -60,7 +61,7 @@ const MyFamily = () => {
       >
         {showAllPhotos ? "Show Less" : "Show More"}
       </button>
-    </div>
+    </Page>
   );
 };
 

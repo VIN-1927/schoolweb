@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import monkeyImg from "../assets/images/monkey.png";
 import globeImg from "../assets/images/globe.png";
 import SpiralMotion from "./SpiralMtion";
+import Page from '../components/Page'
 
 const SpiralMonkey = () => {
   const [x, setX] = useState(0);
@@ -26,7 +27,7 @@ const SpiralMonkey = () => {
   }, [running]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-[80vh] w-full relative">
+    <Page title="fun" className="flex flex-col items-center justify-center h-[80vh] w-full relative">
       <SpiralMotion />
       <div className="relative w-full h-[60vh] flex items-center justify-center">
   <motion.img
@@ -60,7 +61,7 @@ const SpiralMonkey = () => {
 
 </div>
 
-    </div>
+    </Page>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Spring from "../assets/images/Dinaal in Thailand.png";
 import Singapore from '../assets/images/Dinaal in Singapore.png'
 import  Dubai from '../assets/images/Dinaal in UAE.png'
+import Page from '../components/Page'
 
 const ImageGallery = () => {
   const [artWorks, setArtWorks] = useState(false);
@@ -15,7 +16,7 @@ const ImageGallery = () => {
   const displyedArtWork = artWorks ? myDevelopments : myDevelopments.slice(0, 2);
 
   return (
-    <div className="flex flex-col items-center mt-20 mb-16">
+    <Page title="ImageGallery" className="flex flex-col items-center mt-20 mb-16">
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 p-4 overflow-hidden">
         {displyedArtWork.map((art, index) => (
           <div
@@ -39,7 +40,7 @@ const ImageGallery = () => {
         {artWorks ? "less" : "more"}
       </button>
      
-    </div>
+    </Page>
   );
 };
 
