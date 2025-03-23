@@ -9,6 +9,7 @@
     background-color: #005d61;
     width: 100vw;  
     overflow-x: hidden;
+    /* margin-bottom: 70px; */
   }
   .flip-card {
     perspective: 1000px;
