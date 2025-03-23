@@ -39,6 +39,9 @@ const Navbar = () => {
                 <NavLink to="/spiralmonkey" className={linkClass}>
                Monkey
                 </NavLink>
+                <NavLink to="/birthday" className={linkClass}>
+               Calandar
+                </NavLink>
               </div>
             </div>
           </div>

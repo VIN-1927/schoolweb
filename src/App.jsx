@@ -16,6 +16,7 @@ import School from './pages/School.jsx'
 import ImageGallery from './pages/ImageGallery.jsx';
 import Myfamily from './pages/MyFamily.jsx'
 import SpiralMonkey from './components/SpiralMonkey.jsx';
+import MyCalendar from './pages/MyCalendar.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="school" element={<School />} />
       <Route path="image" element={<ImageGallery />} />
       <Route path="family" element={<Myfamily />} />
+      <Route path="birthday" element={<MyCalendar />} />
       <Route path="spiralmonkey" element={<SpiralMonkey />} />
     </Route>
   )
