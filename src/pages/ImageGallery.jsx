@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import Spring from "../assets/images/Dinaal in Thailand.png";
 import Singapore from '../assets/images/Dinaal in Singapore.png'
 import  Dubai from '../assets/images/Dinaal in UAE.png'
-import Page from '../components/Page'
+import   Istanbulone from '../assets/images/Istanbulone.png'
 
+import Page from '../components/Page'
+import BurjKhalifa from '../assets/images/Burj Khalifa.png'
 const ImageGallery = () => {
   const [artWorks, setArtWorks] = useState(false);
 
@@ -11,7 +13,9 @@ const ImageGallery = () => {
     { name: "Phuket", draw: Spring, style: { backgroundColor: "#05dbf2" } },
      { name: "Singapore", draw: Singapore, style: { backgroundColor: "#cbfb07" } },
      { name: "Dubai", draw: Dubai, style: { backgroundColor: "#fdfe03" } },
-  ];
+    {name: "BurjKhalifa", draw: BurjKhalifa, style: {backgroundColor: "#fdfe06"}},
+    {name: "Istanbul", draw: Istanbulone, style: {backgroundColor:"#FF5337" }}
+  ]
 
   const displyedArtWork = artWorks ? myDevelopments : myDevelopments.slice(0, 2);
 
